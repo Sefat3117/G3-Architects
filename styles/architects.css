@@ -36,10 +36,10 @@ nav > ul > li{
     font-weight: bolder;
     color: #131313;
 }
-.brand-new-description small{
+.brand-new-description p{
     font-size: 16px;
 }
-.explore-button{
+.explore-now-button{
     font-size: 20px;
     font-weight: 600;
     display: block;
@@ -189,7 +189,7 @@ nav > ul > li{
     font-weight: 700;
     margin-left: 20px;
 }
-.some-facts small{
+.some-facts p{
     font-size: 16px;
     font-weight: 400;
 }
@@ -228,4 +228,126 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* Responsive Styles */
+/* For Mobile Device */
+@media screen and (max-width:576px) {
+    * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+      }
+    .nav-container{
+        display: block;
+        margin: 0;
+    }
+    .nav-container h2{
+        text-align: left;
+        margin: 0 0 0 3px;
+    }
+    .menu-bar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    .brand-new-container{
+        margin: 0;
+        padding: 0;
+    }
+    .brand-new-description{
+        text-align: left;
+        /* width: 300px; */
+    }
+    .brand-new-description h1{
+        font-size: 25px;
+        margin: 0;
+    }
+    .brand-new-description p{
+        font-size: 7px;
+        text-align: start;
+        width: 200px;
+    }
+    .explore-now-button{
+        height: 40px;
+        width: 110px;
+        font-size: small;
+        margin-bottom: 5px;
+    }
+    .banner-pic img{
+        margin-left: 15px;
+        width: 330px;
+        height: 400px;
+    }
+    .our-features{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .our-features-gallery{
+        grid-template-columns: repeat( 1,1fr);
+    }
+    .our-features-description{
+        width: 400px;
+        text-align: left;
+    }
+    .quick-list-description{
+        font-size: 10px;
+        text-align: start;
+    }
+    .features-types-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .box-1, .box-2, .box-3, .box-4{
+        text-align: left;
+        width: 350px;
+    }
+    .architect-pic img{
+        width: 350px;
+        height: 500px;
+    }
+    .year-button{
+        height: 100px;
+        width: 120px;
+        margin: 0;
+        border-radius: 8px;
+        background-color: #FF900E;
+        border: none;
+        right: 0;
+        bottom: 0;
+    }
+    .year-button h1{
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+    .facts-information-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .some-facts h1,p{
+        text-align: center;
+    }
+    .sponsors-images{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsors-images img{
+    margin-top: 8px;
+    }
+    .sponsors-description h2{
+        text-align: left;
+    }
+    .sponsors-description p{
+        text-align: left;
+        font-size: 10px;
+    }
+   
 }
