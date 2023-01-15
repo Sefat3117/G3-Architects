@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+/* top-banner styles */
+.top-banner{
+   background-color: #FF900E1A;
+   /* height: 1322px; */
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 120px 0 100px;
+}
+nav > ul > li{
+    list-style: none;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.menu-bar{
+    display: flex;
+}
+/* brand-new-description styles */
+.brand-new-description{
+    width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+.brand-new-description h1{
+    font-size: 64px;
+    font-weight: bolder;
+    color: #131313;
+}
+.brand-new-description small{
+    font-size: 16px;
+}
+.explore-button{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    height: 64px;
+    width: 180px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color:#FFFFFF;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+/* banner-pic styles */
+.banner-pic img{
+    height: 700px;
+    width: 93%;
+    margin: 50px;
+}
+/* our-features-styles */
+.our-features{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-features-description{
+    margin-left: 30px;
+    width: 537px;
+}
+.our-features-description h1{
+    font-size: 45px;
+}
+.quick-list-description{
+    font-size: 16px;
+    color: #727272;
+}
+.quick-list{
+    color: #727272;
+}
+.of-our{
+    font-weight: 700;
+}
+.features{
+   color: #FF900E;
+}
+.our-features-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features-gallery img{
+    height: 342px;
+    width: 342px;
+}
+.explore-now-button{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    height: 64px;
+    width: 180px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color:#FFFFFF;
+    margin-top: 32px;
+}
