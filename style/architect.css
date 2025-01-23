@@ -217,7 +217,21 @@ nav a {
   padding: 24px 0 100px 0;
 }
 /* Our Sponsors Container Related Styles */
-.our-sponsors-container > h3,
-p {
+.our-sponsors-container {
+  padding-top: 100px;
+}
+.sponsors-container-title,
+.sponsors-container-description {
   text-align: center;
+}
+.sponsors-container-description {
+  padding: 24px 0 50px 0;
+}
+.sponsors-container-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+.sponsors-container-gallery img {
+  filter: grayscale(100%);
 }
