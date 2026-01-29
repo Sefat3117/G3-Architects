@@ -111,13 +111,15 @@ nav h2 {
   gap: 24px;
 }
 
-.gallery-content h2 {
+.gallery-content h2,
+.features-content h2 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 24px;
 }
 
-.gallery-content p {
+.gallery-content p,
+.features-content p {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 30px;
@@ -125,6 +127,59 @@ nav h2 {
 
 #features {
   color: #ff900e;
+}
+
+.features-container {
+  display: flex;
+  gap: 146px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features-content h2 {
+  border-left: 5px solid #ff900e;
+  padding-left: 15px;
+}
+
+.features-badge {
+  background-color: #ff900e;
+  padding: 2rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  margin-left: -100px;
+  margin-top: -200px;
+}
+
+#year {
+  font-size: 60px;
+}
+
+.features-btn small {
+  font-size: 25px;
+}
+
+.card {
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 30px 42px 30px 30px;
+  margin-top: 20px;
+}
+
+.card h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.features-img img {
+  width: 708px;
+  height: 982px;
 }
 
 /* Mobile Device */
@@ -137,6 +192,10 @@ nav h2 {
 
   header {
     margin-bottom: 30px;
+  }
+
+  section {
+    margin-bottom: 50px;
   }
 
   nav {
@@ -190,5 +249,20 @@ nav h2 {
 
   .gallery-content {
     text-align: center;
+  }
+
+  .features-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .features-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    padding: 15px;
+    margin-top: 5px;
   }
 }
