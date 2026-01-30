@@ -112,14 +112,16 @@ nav h2 {
 }
 
 .gallery-content h2,
-.features-content h2 {
+.features-content h2,
+.facts-content h2 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
 .gallery-content p,
-.features-content p {
+.features-content p,
+.facts-content p {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 30px;
@@ -153,10 +155,12 @@ nav h2 {
 
 #year {
   font-size: 60px;
+  font-weight: 700;
 }
 
-.features-btn small {
+.features-badge small {
   font-size: 25px;
+  font-weight: 500;
 }
 
 .card {
@@ -180,6 +184,45 @@ nav h2 {
 .features-img img {
   width: 708px;
   height: 982px;
+}
+
+.facts-info-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  text-align: center;
+}
+
+.facts-content {
+  width: 542px;
+  margin-bottom: 100px;
+}
+
+.facts-info {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  width: 241px;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.facts-info img {
+  width: 45px;
+}
+
+.facts-info-num {
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-top: 7px;
+}
+
+.facts-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
 
 /* Mobile Device */
@@ -251,6 +294,11 @@ nav h2 {
     text-align: center;
   }
 
+  .features-badge {
+    padding: 1.4rem;
+    margin-left: 0;
+  }
+
   .features-container {
     flex-direction: column;
     gap: 20px;
@@ -264,5 +312,19 @@ nav h2 {
   .card {
     padding: 15px;
     margin-top: 5px;
+  }
+
+  .facts-info-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .facts-content {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .facts-info {
+    width: 80%;
   }
 }
